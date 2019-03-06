@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link href="css/second.css" rel="stylesheet">
+
+    <title>The Data is the Specification: a Manifesto</title>
+</head>
+<body>
+
+<page size="A4">
+
+    <div class="container">
+        <header>
+            <h2>The Data is the Specification: a Manifesto</h2>
+        </header>
+
+        <br>
+        <p>
+          The process of developing self-driving delivery robots that can
+          safely navigate urban environments has required us to solve many
+          complex problems. In doing so, we developed and refined a process
+          for efficiently and effectively solving these problems. We want to
+          share the generalized version of this process and the journey we took
+          to get there.
+        </p>
+        <p>
+          We used to believe that solving complex problems was about forming
+          a complete understanding of the problem and specifying its solution.
+          The advent of machine learning has shown it to be possible
+          to solve them by optimizing directly against data without
+          fully understanding the problem nor the solution.
+        </p>
+        <p>
+          This way of thinking can be applied more generally,
+          in software development and in many other fields.
+          We believe superhuman solutions can be achieved by finding the
+          easiest subset of problems, solving it, and repeating as many
+          times as necessary.
+        </p>
+        <p>
+          Out of all our collected experiences,
+          we have extracted <strong>three core principles</strong>:
+        </p>
+
+        <ol>
+          <li>
+            Instead of coming up with a good general solution,
+            it is better to focus on solving specific cases of the problem.
+          </li>
+          <li>
+            Instead of trying to solve all problematic cases right away,
+            it is better to address a third of the easiest cases and repeat
+            the process multiple times.
+          </li>
+          <li>
+            Instead of writing a good specification of the solution,
+            it is better to curate a collection of problem cases.
+            This collection of problem cases then <b>becomes</b> your specification.
+          </li>
+        </ol>
+
+        <p>
+          In the early days of developing this technology at Starship,
+          our robots were accompanied by a human in public areas -
+          just like self-driving car companies are doing right now.
+          This was because our technology was not yet good enough to
+          operate without supervision.
+          By 2017, our technology had taken major steps forward,
+          meaning our smart six-wheelers could operate in public spaces on
+          their own. We were the first company to accomplish this.
+        </p>
+        <p>
+          To allow a robot to drive unsupervised, you need to ensure safety
+          for the robots and the people with whom they interact.
+          To make sure of this, we started measuring and quantifying
+          our safety metrics long before 2017. The first results were 250
+          times short of our targets. Clearly, we had some work to do.
+        </p>
+        <p>
+          Improving something by 250x is an audacious goal -
+          but the best startups are, by their nature, audacious.
+          Our process to improve safety dramatically was methodical
+          and incremental. We made a list of occasions where the robot did
+          not behave in an ideal manner. From this, we took the worst 100
+          and tried to solve half of them by any means possible.
+        </p>
+        <p>
+          This focus on taking on the lowest-hanging fruit first produced
+          marked improvements. Within a few months, our robots were, according
+          to our metrics, performing twice as safely and efficiently as they
+          were before we began the improvement process.
+        </p>
+        <p>
+          We repeated this process about ten times and eventually reached our
+          goal of 250x improvement. The journey included steps we would have
+          never thought of in the beginning. Sometimes the solution was as easy
+          as fixing simple but hard-to-find bugs that caused our robots to
+          not detect approaching cars. On other occasions, the solutions were
+          not about software, but about changing the processes determining
+          how humans interact with the robots (we intentionally have remote
+          operators occasionally oversee robots, in especially demanding places,
+          over a video link). Other times the solution was to add
+          new sensors to the robot. Not because these sensors were "better"
+          in terms of their general capability, but because they solved a
+          handful of real-life cases that didn’t have other solutions.
+        </p>
+        <p>
+          Our manifesto is an extension of test-driven development, where
+          instead of manually written test cases, you test against real historical
+          data. Agile and Lean methodologies, along with data-driven decision
+          making, also focus on the iterative application of the
+          build-measure-learn loop, but we believe in even faster iteration cycles.
+        </p>
+        <p>
+          The knowledge-aggregation and solution-creation processes can be
+          improved by iterating directly against data itself, as we suggest
+          above. In doing so, you don’t need to write specifications,
+          and you don’t lose vital data about what is really happening.
+          This can lead you to a long-term all-round understanding.
+        </p>
+        <p>
+          We hope you find this manifesto useful in your own work. If you want to discuss any of it with us, or find out more about our problem-solving journey, get in touch with us.
+        </p>
+        <br>
+        <h3>Authors</h3>
+        <p>
+          Kristjan Korjus, Head of Data at Starship Technologies
+        </p>
+        <p>
+          Ahti Heinla, co-founder of Skype, founder and CTO at Starship Technologies
+        </p>
+        <p>
+          Taivo Pungas, Automation lead at Veriff
+        </p>
+        <p>
+          Rao Pärnpuu, Safety Analysis and Data Annotation team lead at Starship Technologies
+        </p>
+    </div>
+
+</page>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

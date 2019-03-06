@@ -1,0 +1,42 @@
+body {
+  background: rgb(204,204,204);
+}
+page {
+  background: white;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.5cm;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {
+  width: 21cm;
+}
+div.container {
+  padding-top: 2cm;
+  padding-bottom: 1cm;
+  padding-left: 1.5cm;
+  padding-right: 1.5cm;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 21cm) {
+  page[size="A4"] {
+    width: 96%;
+  }
+  div.container {
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+}
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
